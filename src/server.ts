@@ -3,6 +3,9 @@ import cors from 'cors';
 import express, { Application } from 'express';
 import { DBconfig } from '../config/db.config';
 import { SERVER } from './utils/constants';
+import firebase from 'firebase/app';
+import 'firebase/database'; // Importa los servicios de Firebase que vayas a utilizar
+import { firebaseConfig } from '../config/firebase.config';
 
 export class Server {
     private app:Application;
@@ -18,6 +21,7 @@ export class Server {
         this.middlewares();
         this.configureRoutes();
         DBconfig.connect();
+        firebase.initializeApp(firebaseConfig);
     }
 
     private middlewares() {
