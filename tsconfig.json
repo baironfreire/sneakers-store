@@ -18,7 +18,7 @@
       "esModuleInterop": true,
       "resolveJsonModule": true,
       "target": "es2017",
-      "outDir": "./dist"
+      "outDir": "./public"
   },
   "exclude": [
       "node_modules"
