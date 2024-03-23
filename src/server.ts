@@ -1,6 +1,6 @@
 import bodyParser from 'body-parser';
 import cors from 'cors';
-import express, { Application, NextFunction } from 'express';
+import express, { Application } from 'express';
 import { DBconfig } from '../config/db.config';
 import { SERVER } from './utils/constants';
 
