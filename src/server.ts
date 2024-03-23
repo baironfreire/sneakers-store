@@ -21,23 +21,17 @@ export class Server {
     }
 
     private middlewares() {
-
         // CORS
         this.app.use( cors() );
-
         // Lectura del body
         this.app.use( express.json() );
-
-        
-
     }
 
     private configureRoutes() {
         // Define las rutas de productos
         this.app.use(require('./infrastructure/api/routes/product.routes'));
-        this.app.use((err: any) => {
-            console.log('llego el errro>>>>', err);
-        })
+        this.app.use(require('./infrastructure/api/routes/price.routes'));
+
     } 
 
     listen() {

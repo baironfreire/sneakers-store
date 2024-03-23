@@ -5,4 +5,8 @@ export interface ProductRepositoryPort {
      * Obtenemos los productos que aun esten en stock
      */
     getProductsInStock():Promise<IProduct[]>;
+
+    findProductByName(
+        name:string
+    ): Promise<IProduct|undefined>;
 }

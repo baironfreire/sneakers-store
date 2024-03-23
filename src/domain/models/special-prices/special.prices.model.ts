@@ -12,5 +12,5 @@ export interface ISpecialPrice extends Document {
     brand: string;
     special_price: number;
 }
-const SpecialPriceModel =  model<ISpecialPrice>('SpecialPrice', specialPriceSchema);
+const SpecialPriceModel =  model<ISpecialPrice>('special_prices', specialPriceSchema);
 export default  SpecialPriceModel;
