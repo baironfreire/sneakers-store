@@ -8,11 +8,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: tsc
+      - run: 'npm i, tsc '
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_NOTIFICATIONS_FLOW }}'
-          projectId: notifications-flow
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_APP_SNAKERS_STORE }}'
+          projectId: app-snakers-store
         env:
           FIREBASE_CLI_PREVIEWS: hostingchannels
