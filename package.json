@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npm run build",
     "install": "npm install",
-    "r": "nodemon ./dist/app.js",
+    "r": "nodemon ./public/app.js",
     "w": "tsc --watch"
   },
   "repository": {
