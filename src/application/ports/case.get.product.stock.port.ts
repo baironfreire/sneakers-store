@@ -4,6 +4,6 @@ export type DependenciesType = {
     mongoDBProductRepository: ProductRepositoryPort
 }
 
-export type GetProductsStockPort = (
+export type CaseGetProductsStockPort = (
     dependencies: DependenciesType
 ) => Promise<any>

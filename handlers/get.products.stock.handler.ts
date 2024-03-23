@@ -1,8 +1,8 @@
 import { NextFunction, Request, RequestHandler, Response } from "express";
-import { DependenciesType } from "../src/application/ports/get.product.stock.port";
+import { DependenciesType } from "../src/application/ports/case.get.product.stock.port";
 import { MongoDBProductRepository } from "../src/infrastructure/db/mongodb.product.repository";
 import { getProductsStockController } from "../src/infrastructure/api/controllers/get.products.stock.controller";
-import { caseUseGetProductsInStock } from "../src/application/cases/get.products.stock";
+import { caseUseGetProductsInStock } from "../src/application/cases/case.get.products.stock";
 
 const dependencies: DependenciesType = {
     mongoDBProductRepository: new MongoDBProductRepository()

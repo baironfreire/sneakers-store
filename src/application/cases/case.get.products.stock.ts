@@ -1,10 +1,10 @@
 import { HTTP_CODES_RESPONSE } from "../../utils/http/http-code-response";
 import { Utils } from "../../utils/utils";
-import { GetProductsStockPort } from "../ports/get.product.stock.port";
+import { CaseGetProductsStockPort } from "../ports/case.get.product.stock.port";
 
 
 
-export const caseUseGetProductsInStock = (): GetProductsStockPort => async (
+export const caseUseGetProductsInStock = (): CaseGetProductsStockPort => async (
     dependencies
 ) => {
     const {

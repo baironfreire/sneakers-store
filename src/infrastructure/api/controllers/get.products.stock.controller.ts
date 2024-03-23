@@ -1,10 +1,10 @@
 import { Request, Response } from "express";
-import { GetProductsStockPort } from "../../../application/ports/get.product.stock.port";
+import { CaseGetProductsStockPort } from "../../../application/ports/case.get.product.stock.port";
 import  *  as responseHandler  from "../../../utils/http/response-handler";
 
 
 export const getProductsStockController = (
-    caseUseGetProductsInStock: GetProductsStockPort
+    caseUseGetProductsInStock: CaseGetProductsStockPort
 ) => async(
     _req: Request, 
     res: Response,

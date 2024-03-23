@@ -10,6 +10,11 @@ export const HTTP_CODES_RESPONSE = {
         code: 'DATA_NOT_FOUND',
         message: 'Data not found',
     },
+    PRODUCT_NOT_FOUND: {
+        httpCode: 404,
+        code: 'PRODUCT_NOT_FOUND',
+        message: 'Product not found',
+    },
 
     INTERNAL_ERROR: {
         httpCode: 500,
