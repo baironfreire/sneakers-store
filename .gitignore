@@ -7,3 +7,5 @@ dist/
 .env
 
 package-lock.json
+.firebase/hosting.cHVibGlj.cache
+firebase-debug.log
