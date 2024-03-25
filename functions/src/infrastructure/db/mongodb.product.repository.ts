@@ -7,7 +7,7 @@ export class MongoDBProductRepository implements ProductRepositoryPort {
     async findProductByName(name: string): Promise<IProduct|undefined> {
         try {            
             const product:IProduct|undefined = await  ProductModel.findOne({
-                'name': name,
+                'name': new RegExp(name, 'i') ,
                 'stock': {$gt: 0}
               }) || undefined;
             return product
