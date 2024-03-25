@@ -4,7 +4,11 @@ export const HTTP_CODES_RESPONSE = {
         code: 'SUCCESSFUL_OPERATION',
         message: 'The request has been successful.',
     },
-
+    BAD_REQUEST: {
+        httpCode: 400,
+        code: 'BAD_REQUEST',
+        message: 'Bad request'
+    },
     DATA_NOT_FOUND: {
         httpCode: 404,
         code: 'DATA_NOT_FOUND',
