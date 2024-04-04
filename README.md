@@ -48,10 +48,11 @@ El proyecto sigue una estructura de carpetas que organiza el código de acuerdo 
 ## Instalación y Uso
 
 1. Clona este repositorio.
-2. Instala las dependencias utilizando npm: npm install 
-3. Configura las credenciales de firebase y MongoDB según sea necesario
-4. Para ejecutar localmente: npm run start
-5. Para ejecutar las pruebas: npm run test
+2. Ingresa a la carpeta principal cd functions
+3. Instala las dependencias utilizando npm: npm install
+4. Configura las credenciales de firebase y MongoDB según sea necesario
+5. Instala las herramientas de firebase npm: npm install --save-dev firebase-tools o npm install -g firebase-tools
+6. Para ejecutar localmente: firebase serve 
 
 ## Principios SOLID
 Este proyecto sigue los principios SOLID para asegurar que el código sea mantenible, escalable y fácil de entender.
